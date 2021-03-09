@@ -1,5 +1,5 @@
 import react from 'react';
-import { Router as ReactRouter, Switch, Route } from 'react-router';
+import { Router as ReactRouter, Switch, Route } from 'react-router-dom';
 import RouterConstants from './routerConstants';
 // Create your own history instance.
 import { createBrowserHistory } from 'history';
