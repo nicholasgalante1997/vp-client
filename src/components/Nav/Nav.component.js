@@ -1,19 +1,23 @@
 import react from 'react';
-import { Nav, NavItem, NavLink } from "shards-react";
+import { Nav, NavItem } from "shards-react";
+import { Link } from 'react-router-dom'
+import styles from './Nav.styles.js'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css"
 
 const CustomNav = (props) => {
-    console.log(props);
+
     return (
-    <Nav justified>
-      <NavItem>
-        <NavLink active href="#">
-          Home
-        </NavLink>
+    <Nav justified style={styles.container}>
+      <NavItem style={styles.item}>
+          <Link to='/'>
+            <p style={styles.text}>Vantage Points</p>  
+          </Link>
       </NavItem>
-      <NavItem>
-        <NavLink href="#">About</NavLink>
+      <NavItem style={styles.item}>
+      <Link to='/about' style={styles.item}>
+          <p style={styles.text}>Scenes</p>  
+        </Link>
       </NavItem>
     </Nav>
 )}

@@ -1,19 +1,17 @@
 import react from 'react';
-import { Router as ReactRouter, Switch, Route } from 'react-router-dom';
-import { createBrowserHistory } from 'history';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import RouterConstants from './routerConstants';
 
 import LandingPage from '../pages/LandingPage/Landing.component';
-import AboutPage from '../page/About/About.component.'
-
-let history = createBrowserHistory();
+import AboutPage from '../pages/About/About.component'
 
 const CustomRouter = () => (
-    <ReactRouter history={history}>
+    <Router>
         <Switch>
             <Route exact path={RouterConstants.HOME} component={LandingPage} />
+            <Route exact path={RouterConstants.ABOUT} component={AboutPage} />
         </Switch>
-    </ReactRouter>
+    </Router>
 )
 
 export default CustomRouter;

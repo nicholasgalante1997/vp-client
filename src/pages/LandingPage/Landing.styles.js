@@ -8,7 +8,7 @@ const styles = {
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
     head: {
         fontFamily: "Poiret One",

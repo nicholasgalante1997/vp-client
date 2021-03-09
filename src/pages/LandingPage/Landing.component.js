@@ -3,11 +3,12 @@ import styles from './Landing.styles'
 import Nav from '../../components/Nav/Nav.component'
 
 const LandingPage = (props) => {
-    const { history } = props;
+
+    console.log(props);
 
     return (
         <>
-        <Nav history={history} />
+        <Nav {...props} />
         <div style={styles.main}>
             <h2 style={styles.head}>Landing Page</h2>
         </div>
