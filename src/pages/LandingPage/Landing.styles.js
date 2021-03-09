@@ -11,7 +11,9 @@ const styles = {
         justifyContent: 'center'
     },
     head: {
-        // fontFamily: "PoiretRegular"
+        fontFamily: "Poiret One",
+        fontStyle: 'cursive',
+        color: 'white'
     }
 }
 
