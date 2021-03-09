@@ -1,9 +1,10 @@
 import react from 'react';
 import { Router as ReactRouter, Switch, Route } from 'react-router-dom';
-import RouterConstants from './routerConstants';
-// Create your own history instance.
 import { createBrowserHistory } from 'history';
+import RouterConstants from './routerConstants';
+
 import LandingPage from '../pages/LandingPage/Landing.component';
+import AboutPage from '../page/About/About.component.'
 
 let history = createBrowserHistory();
 

@@ -3,25 +3,19 @@ import { Nav, NavItem, NavLink } from "shards-react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css"
 
-const CustomNav = (props) => (
+const CustomNav = (props) => {
+    console.log(props);
+    return (
     <Nav justified>
       <NavItem>
         <NavLink active href="#">
-          Active
+          Home
         </NavLink>
       </NavItem>
       <NavItem>
-        <NavLink href="#">Link</NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink href="#">Another Link</NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink disabled href="#">
-          Disabled Link
-        </NavLink>
+        <NavLink href="#">About</NavLink>
       </NavItem>
     </Nav>
-)
+)}
 
 export default CustomNav;
